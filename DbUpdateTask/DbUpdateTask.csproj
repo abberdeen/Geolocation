@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-DbUpdateTask-5333008A-FAAC-4F59-A7A5-FE40CCE3F5DA</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Program.cs~RF66bcb022.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Geolocation.Common\Geolocation.Common.csproj" />
+  </ItemGroup>
+</Project>
